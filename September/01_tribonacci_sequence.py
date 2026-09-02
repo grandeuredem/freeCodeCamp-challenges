@@ -8,10 +8,9 @@ def tribonacci_sequence(start_sequence, lenght):
     while len(start_sequence) < lenght:
         #add  and append the sum of the first three digits in the list of numbers
         start_sequence.append(sum(start_sequence[first_position:third_position]))
-        #increase the watch variable and shifting index accordingly
+        #increase the shifting index accordingly
         first_position += 1
         third_position += 1
-    #return the final list
     return start_sequence
 
 print(tribonacci_sequence([0,0,1], 10))
